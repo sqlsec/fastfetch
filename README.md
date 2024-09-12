@@ -6,25 +6,43 @@ Fastfetch 是一个类似 [neofetch](https://github.com/dylanaraps/neofetch) 的
 
 ## Installation
 
-### Linux
+### 安装 Fastfetch
 
-### macOS
+- Ubuntu 22.04+  && Debian 13+
 
-#### 安装 Fastfetch
+  ```bash
+	apt install fastfetch
+	```
+	
+- Arch Linux
+	```bash
+	pacman -S fastfetch
+	```
+	
+- FreeBSD
+	```bash
+	pkg install fastfetch
+	```
 
-- [HomeBrew](https://formulae.brew.sh/formula/fastfetch#default)
+- Android （Termux）
+	```bash
+	pkg install fastfetch
+	```
+	
+
+- macOS [HomeBrew](https://formulae.brew.sh/formula/fastfetch#default)
 
   ````bash
   brew install fastfetch
   ````
 
-- [MacPorts](https://ports.macports.org/port/fastfetch/)
+- macOS [MacPorts](https://ports.macports.org/port/fastfetch/)
 
   ````bash
   sudo port install fastfetch
   ````
 
-#### 安装 [pokemon-colorscripts](https://gitlab.com/phoneybadger/pokemon-colorscripts)
+### 安装 [pokemon-colorscripts](https://gitlab.com/phoneybadger/pokemon-colorscripts)
 
 克隆或下载存储库：
 
@@ -45,15 +63,35 @@ sudo ./install.sh
 pokemon-colorscripts -r --no-title
 ```
 
-#### 字体安装
+### 字体安装
 
 为了终端下的字体图标正常显示，建议大家下载一些自带字体图标的字体，可以去 [Nerd Fonts - Iconic font aggregator, glyphs/icons collection, & fonts patcher](https://www.nerdfonts.com/font-downloads) 下载自己喜欢的字体。
 
 国光我在 macOS 下测试 [0xProtoNerdFont](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/0xProto.zip) 字体是可以正常显示图标的。
 
-#### 导入预设
+### 导入预设
 
 接着了手动去  [![GitHub release (with filter)](https://img.shields.io/github/v/release/sqlsec/fastfetch?logo=github)](https://github.com/sqlsec/fastfetch/releases) 下载对应的系统的预设方案，解压将其放到用户 home 下的 `.config` 目录下即可：
+
+#### Linux
+
+```bash
+# 备份原有的配置文件
+mv $HOME/.config/fastfetch $HOME/.config/fastfetch.bak
+
+# 进入 .config 目录
+cd $HOME/.config
+
+# 下载并解压然后删除
+wget https://github.com/sqlsec/fastfetch/releases/download/v0.1/fastfetch-for-Linux.zip
+unzip fastfetch-for-Linux.zip && rm fastfetch-for-Linux.zip
+```
+
+不同的 `.jsonc` 就是不同的预设方案，如果启用的话，将其重命名为 `config.jsonc` 即可切换为默认的预设方案：
+
+
+
+#### macOS
 
 ```bash
 # 进入 .config 目录
@@ -63,8 +101,6 @@ cd $HOME/.config
 wget https://github.com/sqlsec/fastfetch/releases/download/v0.1/fastfetch-for-macOS.zip
 unzip fastfetch-for-macOS.zip && rm fastfetch-for-macOS.zip 
 ```
-
- #### 更换预设
 
 不同的 `.jsonc` 就是不同的预设方案，如果启用的话，将其重命名为 `config.jsonc` 即可切换为默认的预设方案：
 
