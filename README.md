@@ -4,6 +4,8 @@
 
 Fastfetch 是一个类似 [neofetch](https://github.com/dylanaraps/neofetch) 的工具，用于获取系统信息并漂亮地显示它。它主要用 C 语言编写，并考虑了性能和可定制性。本项目是一个 Fastfetch 轮子，主要是集成了宝可梦显示和其他系列的恶搞图片，目前只在 Linux 和 macOS 平台下测试过。
 
+![](imgs/screenshot.jpg) 
+
 ## Installation
 
 ### 安装 Fastfetch
@@ -29,7 +31,6 @@ Fastfetch 是一个类似 [neofetch](https://github.com/dylanaraps/neofetch) 的
 	pkg install fastfetch
 	```
 	
-
 - macOS [HomeBrew](https://formulae.brew.sh/formula/fastfetch#default)
 
   ````bash
@@ -89,7 +90,29 @@ unzip fastfetch-for-Linux.zip && rm fastfetch-for-Linux.zip
 
 不同的 `.jsonc` 就是不同的预设方案，如果启用的话，将其重命名为 `config.jsonc` 即可切换为默认的预设方案：
 
+- **config-linux-ubuntu.jsonc**
 
+![](imgs/config-linux-ubuntu.jpg) 
+
+- **config-linux-animal.jsonc**
+
+![](imgs/config-linux-animal.jpg) 
+
+- **config-linux-anime.jsonc**
+
+![](imgs/config-linux-anime.jpg) 
+
+- **config-linux-arch.jsonc**
+
+![](imgs/config-linux-arch.jpg) 
+
+- **config-linux-linux.jsonc**
+
+![](imgs/config-linux-linux.jpg) 
+
+- **config-linux-pokemon.jsonc**
+
+![](imgs/config-linux-pokemon.jpg) 
 
 #### macOS
 
